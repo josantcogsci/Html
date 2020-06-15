@@ -21,45 +21,58 @@
 
 
   <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
-    Your Information
+    <legend>Your Information</legend>
     <ul>
-      <li>Name: <input type="text" name="customername"></li>
-      <li>Address: <input type="text" name="address"></li>
-      <li>Telephone Number: <input type="tel" name="telephone"></li>
-      <li>Email: <input type="email" name="email"></li>
-      <li>Delivery instructions:<br>
+      <li><label for="form-name">Name:</label> <input type="text" name="fullname" id="form-name"></li>
+      <li><label for="form-address">Address:</label> <input type="text" name="address"></li>
+      <li><label for="form-tel-number">Telephone Number:</label> <input type="tel" name="telephone"></li>
+      <li><label for="form-email">Email:</label> <input type="email" name="email"></li>
+      <li><label for="">Delivery instructions:</label><br>
         <textarea name="instructions" rows="4" cols="60" maxlength="400"
           placeholder="No more than 400 characters long"></textarea></textarea></li>
     </ul>
 
 
     <h2>Design Your Dream Pizza:</h2>
+    <fieldset>
+      <legend>Pizza specs</legend>
 
-    <p>Pizza specs
-    <p>
+      <fieldset>
+        <legend>
+          Crust <em>(Choose one)</em>:
+        </legend>
+        <ul>
+          <li><label><input type="radio" name="crust" value="white" checked>Classic white</label></li>
+          <li><label><input type="radio" name="crust" value="multigrain">Multigrain</label></li>
+          <li><label><input type="radio" name="crust" value="cheese-stuffed">Cheese-stuffed crust</label></li>
+          <li><label><input type="radio" name="crust" value="gluten-free">Gluten-free</label></li>
+        </ul>
+      </fieldset>
 
-    <p>Crust <em>(Choose one)</em>:</p>
-    <ul>
-      <li>Classic white</li>
-      <li>Multigrain</li>
-      <li>Cheese-stuffed crust</li>
-      <li>Gluten-free</li>
-    </ul>
+      <fieldset>
+        <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
+        <ul>
+          <li><label><input type="checkbox" name="toppings[]" value="red-sauce" checked>Red sauce</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="white-sauce">White sauce</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="mozzarella">Mozzarella Cheese</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="peppers">Peppers</label></li>
+          <li><label><input type="checkbox" name="toppings[]" value="anchovies">Anchovies</label></li>
+        </ul>
+      </fieldset>
 
-    <p>Toppings <em>(Choose as many as you want)</em>:</p>
-    <ul>
-      <li>Red sauce</li>
-      <li>White sauce</li>
-      <li>Mozzarella Cheese</li>
-      <li>Pepperoni</li>
-      <li>Mushrooms</li>
-      <li>Peppers</li>
-      <li>Anchovies</li>
-    </ul>
-
-    <p>Number</p>
-    <p>How many pizzas:
-    <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
+      <fieldset>
+        <legend>Number</legend>
+        <p>How many pizzas:
+          <select name="pizzas" size="1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>
+      </fieldset>
+    </fieldset>
   </form>
 
 </body>
