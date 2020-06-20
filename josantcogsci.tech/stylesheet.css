@@ -1,0 +1,20 @@
+colors {
+    color: #8A9691;
+    color: #C7E3E1;
+    color: #1B2B41;
+    color: #dddddd;
+    color: #92898A;
+    color: #335749;
+}
+
+body {
+    background-image: url("inside.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #1B2B41;
+    color: #DDDDDD;
+}
+
+a {
+    color: #FFFFFF;
+}
