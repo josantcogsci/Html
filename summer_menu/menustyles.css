@@ -1,0 +1,91 @@
+body {
+    /* background-position: center top;
+    background-image: url(images/bullseye.png); */
+    font-family: Georgia, serif;
+    font-size: 100%;
+    line-height: 175%;
+    margin: 0 15%;
+    background: #D2DC9D url(images/blackgoose.png) no-repeat center 100px fixed;
+  }
+
+  header {
+    background: url(images/purpledot.png) center top repeat-x;
+    background: 
+      url(images/purpledot.png) left top repeat-y,
+      url(images/purpledot.png) right top repeat-y,
+      url(images/gooseshadow.png) 90% bottom no-repeat;
+    background-color: rgba(255, 255, 255, .5);
+    margin-top: 0;
+    padding: 3em 1em 2em 1em;
+    text-align: center;
+  }
+
+  a:link {
+    color: #939;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #937393;
+  }
+
+  a:hover {
+    color: #C700F2;
+  }
+
+  a:active {
+    color: FF00FF;
+  }
+
+  h1 {
+    font: bold 1.5em Georgia, serif;
+    color: #993399;
+    text-shadow: .1em .1em .2em gray;
+  }
+
+  h2 {
+    color: #CC6600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    text-align: center;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  strong {
+    font-style: italic;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #info p {
+    font-style: italic;
+  }
+
+  .price {
+    font-family: Georgia, serif;
+    font-style: italic;
+  }
+
+  p.warning,
+  sup {
+    font-size: small;
+  }
+
+  .label {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: normal;
+  }
+
+  h2+p {
+    text-align: center;
+    font-style: italic;
+  }
