@@ -1,0 +1,100 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  font-family: Georgia, serif;
+  font-size: 100%;
+  background-color: white;
+}
+
+/* link styles */
+a:link,
+a:visited {
+  color: #dc6903;
+}
+a:focus,
+a:hover,
+a:active {
+  color: #f9ab33;
+}
+
+/* header styles */
+header {
+  color: white;
+  background: url(images/croissants_banner.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  height: 15em;
+}
+header p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* nav styles */
+nav,
+footer {
+  font-family: verdana, sans-serif;
+  background-color: #783f27;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #f9ab33;
+}
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
+  color: #fff;
+}
+nav ul li {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* main "products" styles */
+main {
+  font-family: "Stint Ultra Expanded", cursive;
+  background-color: white;
+  line-height: 1.8em;
+  color: #555;
+  padding: 1em;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #7a0002;
+}
+p.more {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+/* aside "hours" styles */
+aside {
+  background: url(images/scallop.png) repeat-y left top;
+  background-color: #f6f3ed;
+  padding: 1em;
+  padding-left: 45px;
+}
+/* misc styles */
+footer {
+  color: #eaddc4;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+h2 {
+  font-family: "Stint Ultra Expanded", cursive;
+}
+.day {
+  color: #783f27;
+  font-family: verdana, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
