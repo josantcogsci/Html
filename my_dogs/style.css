@@ -1,0 +1,33 @@
+body {
+    color:  #5977B3;
+    background-color: #DAD4CA;
+}
+div {
+    display: inline-block;
+}
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* Palette Colors */
+  
+  h6 {
+      color: #DB607D;
+      color: #5977B3;
+      color: #DAD4CA;
+      color: #4B4844;
+      color: #97877D;
+  }
